@@ -41,7 +41,7 @@ describe "MusicLibraryController" do
       expect($stdout).to receive(:puts).with("To list all of the songs by a particular artist, enter 'list artist'.")
       expect($stdout).to receive(:puts).with("To list all of the songs of a particular genre, enter 'list genre'.")
       expect($stdout).to receive(:puts).with("To play a song, enter 'play song'.")
-      expect($stdout).to receive(:puts).with("To quit, type 'exit'.")
+      expect($stdout).to receive(:puts).with("To exit, enter 'exit'.")
       expect($stdout).to receive(:puts).with("What would you like to do?")
 
       music_library_controller.call
